@@ -1,0 +1,15 @@
+name = "nuxt-v-maze"
+type = "javascript"
+account_id = "42a64196f1d5800e49387e139dc1732b"
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2022-04-07"
+
+[site]
+bucket = "./.output/public"
+entry-point = "./.output"
+
+[build]
+command = "true"
+upload.format = "service-worker"
