@@ -1,0 +1,159 @@
+[
+  {
+    "id": 2307407,
+    "url": "https://www.tvmaze.com/episodes/2307407/boer-zoekt-vrouw-12x08-episode-8",
+    "name": "Episode 8",
+    "season": 12,
+    "number": 8,
+    "type": "regular",
+    "airdate": "2022-04-10",
+    "airtime": "20:25",
+    "airstamp": "2022-04-10T18:25:00+00:00",
+    "runtime": 65,
+    "rating": {
+      "average": null
+    },
+    "image": null,
+    "summary": null,
+    "show": {
+      "id": 5975,
+      "url": "https://www.tvmaze.com/shows/5975/boer-zoekt-vrouw",
+      "name": "Boer zoekt Vrouw",
+      "type": "Reality",
+      "language": "Dutch",
+      "genres": [],
+      "status": "Running",
+      "runtime": 65,
+      "averageRuntime": 65,
+      "premiered": "2004-11-21",
+      "ended": null,
+      "officialSite": "http://boerzoektvrouw.kro.nl/",
+      "schedule": {
+        "time": "20:25",
+        "days": [
+          "Sunday"
+        ]
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 38,
+      "network": {
+        "id": 1018,
+        "name": "NPO 1",
+        "country": {
+          "name": "Netherlands",
+          "code": "NL",
+          "timezone": "Europe/Amsterdam"
+        },
+        "officialSite": null
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 19991,
+        "thetvdb": 79572,
+        "imdb": null
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/23/58734.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/23/58734.jpg"
+      },
+      "summary": null,
+      "updated": 1649104219,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/5975"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2303978"
+        },
+        "nextepisode": {
+          "href": "https://api.tvmaze.com/episodes/2307407"
+        }
+      }
+    },
+    "_links": {
+      "self": {
+        "href": "https://api.tvmaze.com/episodes/2307407"
+      }
+    }
+  },
+  {
+    "id": 2304072,
+    "url": "https://www.tvmaze.com/episodes/2304072/wie-denk-je-wel-dat-je-bent-2x04-de-jongste-versus-de-oudste-kinderen-in-een-gezin",
+    "name": "De jongste versus de oudste kinderen in een gezin",
+    "season": 2,
+    "number": 4,
+    "type": "regular",
+    "airdate": "2022-04-10",
+    "airtime": "21:30",
+    "airstamp": "2022-04-10T19:30:00+00:00",
+    "runtime": 40,
+    "rating": {
+      "average": null
+    },
+    "image": null,
+    "summary": null,
+    "show": {
+      "id": 61318,
+      "url": "https://www.tvmaze.com/shows/61318/wie-denk-je-wel-dat-je-bent",
+      "name": "Wie denk je wel dat je bent",
+      "type": "Documentary",
+      "language": "Dutch",
+      "genres": [],
+      "status": "Running",
+      "runtime": 40,
+      "averageRuntime": 40,
+      "premiered": "2020-01-05",
+      "ended": null,
+      "officialSite": "https://www.ntr.nl/Wie-denk-je-wel-dat-je-bent/378",
+      "schedule": {
+        "time": "21:30",
+        "days": [
+          "Sunday"
+        ]
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 6,
+      "network": {
+        "id": 1018,
+        "name": "NPO 1",
+        "country": {
+          "name": "Netherlands",
+          "code": "NL",
+          "timezone": "Europe/Amsterdam"
+        },
+        "officialSite": null
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 376519,
+        "imdb": null
+      },
+      "image": null,
+      "summary": null,
+      "updated": 1649069371,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/61318"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2304071"
+        },
+        "nextepisode": {
+          "href": "https://api.tvmaze.com/episodes/2304072"
+        }
+      }
+    },
+    "_links": {
+      "self": {
+        "href": "https://api.tvmaze.com/episodes/2304072"
+      }
+    }
+  }
+]

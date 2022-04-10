@@ -10,6 +10,17 @@ installed and activated with a CloudFlare account.
 
 [nuxt cloudflare workers deployment guide](https://v3.nuxtjs.org/guide/deployment/cloudflare) . 
 
+Use vercel instead?
+
+
+# Additional Features
+
+[]- WebShare api implementation on show pages?
+[]- OpenGraph metadata?
+[]- Android installable PWA?
+[]- Favorite shows & latest episodes?
+
+
 # Nuxt 3 Minimal Starter
 
 We recommend to look at the [documentation](https://v3.nuxtjs.org).
