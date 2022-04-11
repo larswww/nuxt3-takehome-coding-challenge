@@ -2,6 +2,7 @@
 import {format, add} from 'date-fns'
 import ShowGrid from '@/components/ShowGrid.vue'
 import {vIntersectionObserver} from '@vueuse/components'
+import {Episode} from "~/types";
 
 let currentDay = format(new Date(), 'yyyy-MM-dd') //'2022-04-11' required by API
 const selectedCountry = 'NL'
@@ -9,15 +10,15 @@ const schedules = ref([])
 
 const loadOneDaysTvScheduleFor = (date, country) => {
   const url = `https://api.tvmaze.com/schedule?country=${country}&date=${date}`
-  const {data, pending, error} = useFetch(url)
-  return {date, data, pending, error}
+  const {data: episodes, pending, error} = useFetch<Episode[]>(url)
+  return {date, episodes, pending, error}
 }
 
 schedules.value.push(loadOneDaysTvScheduleFor(currentDay, selectedCountry))
 const root = ref(null)
 const onIntersectionObserver = ([{intersectionRatio, isIntersecting, isVisible}]) => {
-    // only increment schedule on first scroll-over, not in or exit
-    addAnotherDay()
+  // only increment schedule on first scroll-over, not in or exit
+  addAnotherDay()
 }
 
 const addAnotherDay = () => {
@@ -32,7 +33,6 @@ const addAnotherDay = () => {
 </script>
 <template>
   <div>
-    <h1>index page</h1>
 
     <template key="shows-today" v-for="apiCall of schedules">
 
@@ -44,8 +44,8 @@ const addAnotherDay = () => {
         {{ apiCall.error }}
       </template>
 
-      <template v-if="apiCall.data">
-        <ShowGrid :key="apiCall.date" date="today" :schedule="apiCall.data"/>
+      <template v-if="apiCall.episodes">
+        <ShowGrid :key="apiCall.date" :date="apiCall.date" :episodes="apiCall.episodes"/>
       </template>
     </template>
 
