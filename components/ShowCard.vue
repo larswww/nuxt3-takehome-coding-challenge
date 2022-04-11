@@ -5,4 +5,15 @@
  * - basic info display
  *
  */
+
+interface Props {
+  show: any
+}
+
+defineProps<Props>()
+
 </script>
+
+<template>
+  <h1>{{show.name}}</h1>
+</template>

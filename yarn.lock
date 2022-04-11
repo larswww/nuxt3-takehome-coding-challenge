@@ -1764,6 +1764,15 @@
     source-map "0.5.6"
     tsconfig "^7.0.0"
 
+"@vueuse/components@^8.2.5":
+  version "8.2.5"
+  resolved "https://registry.yarnpkg.com/@vueuse/components/-/components-8.2.5.tgz#4096951c19a13c0b4d1d33dff48f78484dc5e262"
+  integrity sha512-ELhfxeqjcGK1In5E5WTmuLxQMtUypIyHwJN07WW+YL5S+RI7VkFertcD7wV+4/qXOWY/AMBsozXx1ZJt+uFs3Q==
+  dependencies:
+    "@vueuse/core" "8.2.5"
+    "@vueuse/shared" "8.2.5"
+    vue-demi "*"
+
 "@vueuse/core@8.2.5", "@vueuse/core@^8.2.5":
   version "8.2.5"
   resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-8.2.5.tgz#ca6a59091ecf16e6739c53f3d857b11967a5eb06"
@@ -2812,6 +2821,11 @@ data-urls@^2.0.0:
     abab "^2.0.3"
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
+
+date-fns@^2.28.0:
+  version "2.28.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.28.0.tgz#9570d656f5fc13143e50c975a3b6bbeb46cd08b2"
+  integrity sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw==
 
 debug@2.6.9:
   version "2.6.9"

@@ -29,7 +29,6 @@ describe('App', () => {
         const secondItem = scheduleResponse[1]
         const { getByText } = render(ShowGrid,{ props: {schedule: scheduleResponse }})
         getByText(firstItem.show.name)
-
         getByText(secondItem.show.name)
     })
 

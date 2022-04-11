@@ -8,7 +8,7 @@ type Props = {
 
 const props = defineProps<Props>()
 
-const { data } = useFetch(props.url)
+const { data, pending, error } = useFetch(props.url)
 
 </script>
 <template>
