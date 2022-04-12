@@ -15,13 +15,8 @@ const loadOneDaysTvScheduleFor = (date, country) => {
 }
 
 schedules.value.push(loadOneDaysTvScheduleFor(currentDay, selectedCountry))
-const root = ref(null)
-const onIntersectionObserver = ([{intersectionRatio, isIntersecting, isVisible}]) => {
-  // only increment schedule on first scroll-over, not in or exit
-  addAnotherDay()
-}
 
-const addAnotherDay = () => {
+function addAnotherDay() {
   const nextDay = format(add(new Date(currentDay), {days: 1}), 'yyyy-MM-dd')
   const [hasDateAlready] = schedules.value.filter(x => x.date === nextDay)
   if (hasDateAlready) return
@@ -32,28 +27,31 @@ const addAnotherDay = () => {
 
 </script>
 <template>
-  <div>
 
-    <template key="shows-today" v-for="apiCall of schedules">
+  <div>
+    <div v-for="apiCall in schedules" :key="`schedule-for-${apiCall.date}`">
+
+      <div class="-ml-2 mt-6 mb-1 flex flex-wrap items-baseline">
+        <h3 class="ml-2 mt-2 text-lg leading-6 font-medium text-gray-900">{{ format(new Date(apiCall.date), "EEEE io 'of' LLLL") }}</h3>
+        <p v-if="!apiCall.episodes?.length" class="ml-2 mt-1 text-sm text-gray-500"> No new episodes </p>
+        <p v-if="apiCall.error" class="ml-2 mt-1 text-sm text-red-500"> ❌ Error requesting episodes, try reloading</p>
+      </div>
 
       <template v-if="apiCall.pending">
-        Loading...
+        Loading... {{ apiCall.pending }}
       </template>
-
-      <template v-if="apiCall.error">
-        {{ apiCall.error }}
+      <template v-else>
+        <ShowGrid :key="apiCall.date"
+                  :date="apiCall.date"
+                  :episodes="apiCall.episodes"/>
       </template>
-
-      <template v-if="apiCall.episodes">
-        <ShowGrid :key="apiCall.date" :date="apiCall.date" :episodes="apiCall.episodes"/>
-      </template>
-    </template>
-
-
-    <div ref="root" v-intersection-observer="[onIntersectionObserver, {root}]">
-
     </div>
-
+    <!--    The api will return 429 too many requests if the scroll is too aggressive
+      - if user scrolls past button, it won't load more, until its scrolled over again.
+     -->
+    <button ref="infiniteScroll" v-intersection-observer="addAnotherDay" class="w-full" @click="addAnotherDay">
+      Load More
+    </button>
   </div>
 
 </template>

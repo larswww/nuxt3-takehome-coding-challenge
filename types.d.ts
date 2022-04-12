@@ -2,6 +2,7 @@ export type Show = {
     id: number
     name: string
     officialSite?: string
+    genre: string[]
 }
 
 export type Episode = {

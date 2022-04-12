@@ -1,0 +1,590 @@
+[
+  {
+    "score": 0.8688195,
+    "show": {
+      "id": 49963,
+      "url": "https://www.tvmaze.com/shows/49963/game",
+      "name": "Game",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama"
+      ],
+      "status": "In Development",
+      "runtime": null,
+      "averageRuntime": null,
+      "premiered": null,
+      "ended": null,
+      "officialSite": null,
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 69,
+      "network": {
+        "id": 2,
+        "name": "CBS",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        },
+        "officialSite": "https://www.cbs.com/"
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": null,
+        "imdb": null
+      },
+      "image": null,
+      "summary": "<p>Political drama written by Martin Lawrence &amp; Snoop Dogg.</p>",
+      "updated": 1598544757,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/49963"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.7751228,
+    "show": {
+      "id": 23647,
+      "url": "https://www.tvmaze.com/shows/23647/game",
+      "name": "Game",
+      "type": "Scripted",
+      "language": "Chinese",
+      "genres": [],
+      "status": "Ended",
+      "runtime": 60,
+      "averageRuntime": 60,
+      "premiered": "2016-12-12",
+      "ended": "2017-01-12",
+      "officialSite": null,
+      "schedule": {
+        "time": "",
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday"
+        ]
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 11,
+      "network": {
+        "id": 1065,
+        "name": "Hakka TV",
+        "country": {
+          "name": "Taiwan, Province of China",
+          "code": "TW",
+          "timezone": "Asia/Taipei"
+        },
+        "officialSite": null
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": null,
+        "imdb": null
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/88/222083.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/88/222083.jpg"
+      },
+      "summary": null,
+      "updated": 1598618157,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/23647"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/1920929"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.7002393,
+    "show": {
+      "id": 43687,
+      "url": "https://www.tvmaze.com/shows/43687/squid-game",
+      "name": "Squid Game",
+      "type": "Scripted",
+      "language": "Korean",
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Mystery"
+      ],
+      "status": "Running",
+      "runtime": null,
+      "averageRuntime": 55,
+      "premiered": "2021-09-17",
+      "ended": null,
+      "officialSite": "https://www.netflix.com/title/81040344",
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": 8
+      },
+      "weight": 98,
+      "network": null,
+      "webChannel": {
+        "id": 1,
+        "name": "Netflix",
+        "country": null,
+        "officialSite": "https://www.netflix.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 383275,
+        "imdb": "tt10919420"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/362/906711.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/362/906711.jpg"
+      },
+      "summary": "<p>Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.</p>",
+      "updated": 1648845343,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/43687"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2172214"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.69791234,
+    "show": {
+      "id": 16694,
+      "url": "https://www.tvmaze.com/shows/16694/match-game",
+      "name": "Match Game",
+      "type": "Game Show",
+      "language": "English",
+      "genres": [
+        "Comedy"
+      ],
+      "status": "Ended",
+      "runtime": 60,
+      "averageRuntime": 60,
+      "premiered": "2016-06-26",
+      "ended": "2021-07-28",
+      "officialSite": "https://abc.com/shows/match-game",
+      "schedule": {
+        "time": "22:00",
+        "days": [
+          "Wednesday"
+        ]
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 93,
+      "network": {
+        "id": 3,
+        "name": "ABC",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        },
+        "officialSite": "https://abc.com/"
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 312575,
+        "imdb": "tt5672484"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/359/898314.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/359/898314.jpg"
+      },
+      "summary": "<p>Contestants attempt to match the answers of celebrities in the iconic game of fill in the missing blank.</p>",
+      "updated": 1648864399,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/16694"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/1956257"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.6951648,
+    "show": {
+      "id": 1436,
+      "url": "https://www.tvmaze.com/shows/1436/the-game",
+      "name": "The Game",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama"
+      ],
+      "status": "Ended",
+      "runtime": 60,
+      "averageRuntime": 60,
+      "premiered": "2014-11-05",
+      "ended": "2014-12-10",
+      "officialSite": null,
+      "schedule": {
+        "time": "22:00",
+        "days": [
+          "Wednesday"
+        ]
+      },
+      "rating": {
+        "average": 7.9
+      },
+      "weight": 87,
+      "network": {
+        "id": 15,
+        "name": "BBC America",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        },
+        "officialSite": null
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 45214,
+        "thetvdb": 280736,
+        "imdb": "tt3159736"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/8/20717.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/8/20717.jpg"
+      },
+      "summary": "<p>In the secret world of espionage, the players are set and the fight to save Britain begins. A complex invisible war is being fought by skilled spies trained in the high stakes world of covert espionage. In 1972 London, tensions are at a terrifying peak as the world's super powers plot against their enemies. The threat: a dangerous and deadly Soviet plot, designed to bring Britain to its knees, dubbed Operation Glass. This is where The Game begins – a stylish, character-driven spy drama that explores the lives and lies of the invisible soldiers fighting a secret war.<br></p>",
+      "updated": 1624158123,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/1436"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/129491"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.6934753,
+    "show": {
+      "id": 50895,
+      "url": "https://www.tvmaze.com/shows/50895/game-changer",
+      "name": "Game Changer",
+      "type": "Game Show",
+      "language": "English",
+      "genres": [
+        "Comedy"
+      ],
+      "status": "Running",
+      "runtime": 25,
+      "averageRuntime": 25,
+      "premiered": "2019-09-20",
+      "ended": null,
+      "officialSite": "https://www.youtube.com/channel/UCPDXXXJj9nax0fr0Wfc048g",
+      "schedule": {
+        "time": "12:00",
+        "days": [
+          "Monday"
+        ]
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 84,
+      "network": null,
+      "webChannel": {
+        "id": 228,
+        "name": "Collegehumor",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        },
+        "officialSite": null
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 369988,
+        "imdb": "tt11011104"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/276/690655.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/276/690655.jpg"
+      },
+      "summary": "<p>In this game show, the game changes every show! Players begin each round without knowing the rules -- and must figure them out while competing to win.</p>",
+      "updated": 1648349240,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/50895"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2302150"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.6909048,
+    "show": {
+      "id": 59231,
+      "url": "https://www.tvmaze.com/shows/59231/the-game",
+      "name": "The Game",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Sports"
+      ],
+      "status": "Running",
+      "runtime": null,
+      "averageRuntime": 34,
+      "premiered": "2021-11-11",
+      "ended": null,
+      "officialSite": "https://www.paramountplus.com/shows/the-game-2021/",
+      "schedule": {
+        "time": "",
+        "days": [
+          "Thursday"
+        ]
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 82,
+      "network": null,
+      "webChannel": {
+        "id": 107,
+        "name": "Paramount+",
+        "country": null,
+        "officialSite": "https://www.paramountplus.com/"
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 411898,
+        "imdb": "tt4057998"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/379/948644.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/379/948644.jpg"
+      },
+      "summary": "<p>Relocating from San Diego to Sin City, The Game returns with a mix of original cast and new players to offer a modern-day examination of Black culture through the prism of pro football.</p>",
+      "updated": 1645263003,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/59231"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2247929"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.6909048,
+    "show": {
+      "id": 3115,
+      "url": "https://www.tvmaze.com/shows/3115/game-shakers",
+      "name": "Game Shakers",
+      "type": "Scripted",
+      "language": "English",
+      "genres": [
+        "Comedy",
+        "Children"
+      ],
+      "status": "Ended",
+      "runtime": 30,
+      "averageRuntime": 30,
+      "premiered": "2015-09-12",
+      "ended": "2019-06-08",
+      "officialSite": "https://www.nick.com/shows/game-shakers",
+      "schedule": {
+        "time": "20:00",
+        "days": [
+          "Saturday"
+        ]
+      },
+      "rating": {
+        "average": 4.8
+      },
+      "weight": 79,
+      "network": {
+        "id": 27,
+        "name": "Nickelodeon",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        },
+        "officialSite": null
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 299779,
+        "imdb": "tt4711184"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/199/498529.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/199/498529.jpg"
+      },
+      "summary": "<p>When Babe and Kenzie created Sky Whale for a seventh grade science project, they were hoping for a passing grade at best. They never expected it to become the most popular game of the year! Now they're making millions with their insanely successful business. What could go wrong on <b>Game Shakers</b>?</p>",
+      "updated": 1624705482,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/3115"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/1499405"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.6864493,
+    "show": {
+      "id": 6226,
+      "url": "https://www.tvmaze.com/shows/6226/liar-game",
+      "name": "Liar Game",
+      "type": "Scripted",
+      "language": "Japanese",
+      "genres": [
+        "Drama"
+      ],
+      "status": "Ended",
+      "runtime": 45,
+      "averageRuntime": 45,
+      "premiered": "2007-04-14",
+      "ended": "2010-01-19",
+      "officialSite": null,
+      "schedule": {
+        "time": "23:00",
+        "days": [
+          "Saturday"
+        ]
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 47,
+      "network": {
+        "id": 131,
+        "name": "Fuji TV",
+        "country": {
+          "name": "Japan",
+          "code": "JP",
+          "timezone": "Asia/Tokyo"
+        },
+        "officialSite": null
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 81763,
+        "imdb": "tt0978076"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/127/318506.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/127/318506.jpg"
+      },
+      "summary": "<p>Nao Kanzaki, is a college student who is known for her honesty and naivete. One day, she receives a black postcard indicating that she has been selected to participate in the \"Liar Game Tournament\". Along with the postcard is a box with 100 million yen. The goal of the first round of the game is to trick the other player out of their hundred million yen. At the end, the winner would get to keep the hundred million earned, and the loser owes the LGT 100 million yen, which \"will be collected by any means and at all costs\".</p>",
+      "updated": 1585474222,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/6226"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/371024"
+        }
+      }
+    }
+  },
+  {
+    "score": 0.6851274,
+    "show": {
+      "id": 52686,
+      "url": "https://www.tvmaze.com/shows/52686/the-game",
+      "name": "The Game",
+      "type": "Scripted",
+      "language": "Arabic",
+      "genres": [
+        "Comedy"
+      ],
+      "status": "Running",
+      "runtime": 30,
+      "averageRuntime": 30,
+      "premiered": "2020-01-15",
+      "ended": null,
+      "officialSite": "https://shahid.mbc.net/en/series/Al-Lo'ba/series-392306",
+      "schedule": {
+        "time": "",
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Sunday"
+        ]
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 73,
+      "network": null,
+      "webChannel": {
+        "id": 379,
+        "name": "Shahid",
+        "country": null,
+        "officialSite": null
+      },
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": 375761,
+        "imdb": "tt11638962"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/291/727819.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/291/727819.jpg"
+      },
+      "summary": "<p>Despite Mazu and Wasim's success in finding Samir's character and get rid of him, both received new devices, which means that the game is still ongoing.</p>",
+      "updated": 1649204114,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/52686"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2308307"
+        }
+      }
+    }
+  }
+]

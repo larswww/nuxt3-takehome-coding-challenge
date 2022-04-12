@@ -6,7 +6,7 @@ module.exports = {
     moduleNameMapper: {
         "^@/(.*)": "<rootDir>/$1",
         "#app": "<rootDir>/node_modules/nuxt3/dist/app/index.mjs",
-        "#imports": "<rootDir>/node_modules/nuxt3/dist/pages/runtime/composables.mjs",
+        "#imports": "<rootDir>/.nuxt/imports.d.ts",
     },
     transform: {
         '^.+\\.(js|jsx|mjs)$': 'babel-jest',

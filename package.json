@@ -13,6 +13,7 @@
     "@vue/test-utils": "^2.0.0-rc.18",
     "@vue/vue3-jest": "^27.0.0-alpha.4",
     "@vueuse/nuxt": "^8.2.5",
+    "cypress": "^9.5.4",
     "jest": "^27.5.1",
     "jest-transform-stub": "^2.0.0",
     "nuxt3": "latest",
@@ -20,6 +21,7 @@
     "typescript": "^4.6.3"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.5.0",
     "@heroicons/vue": "^1.0.6",
     "@vueuse/components": "^8.2.5",
     "@vueuse/core": "^8.2.5",
