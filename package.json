@@ -3,7 +3,9 @@
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
-    "start": "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs",
+    "test:unit": "jest",
+    "test:e2e": "cypress open"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",

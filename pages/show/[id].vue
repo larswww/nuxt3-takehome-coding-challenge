@@ -1,23 +1,19 @@
 <script setup lang="ts">
 import {ClockIcon, CalendarIcon, ExternalLinkIcon, GlobeIcon} from "@heroicons/vue/outline";
 
-/**
- * Re-use from showCard?
- * Render show image and desc
- * episode list, perhaps season tabbed? use dates?
- * - make a type for the API response and decide components from that
- */
 const route = await useRoute()
 const reactiveId = ref(route.params.id)
-const {data: show, pending, refresh, error } = await useAsyncData(
+
+//https://v3.nuxtjs.org/api/composables/use-async-data
+const {data: show, pending, refresh, error} = await useAsyncData(
     '/shows/',
     () => $fetch(`https://api.tvmaze.com/shows/${reactiveId.value}`),
-    { watch: [reactiveId]})
+    {watch: [reactiveId]})
 refresh()
 
 </script>
 <template>
-  <div >
+  <div>
     <div class="sm:flex" v-if="!pending">
       <div class="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4" :key="show.name">
         <img v-if="show.image" :src="show.image.original" alt=""
@@ -34,7 +30,6 @@ refresh()
           </template>
         </div>
         <p v-if="show.summary" class="mt-1">{{ show.summary }}</p>
-
 
 
         <ul role="list" class="mt-5 space-y-6">

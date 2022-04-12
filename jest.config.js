@@ -17,6 +17,9 @@ module.exports = {
     transformIgnorePatterns: [
         "node_modules/(?!(nuxt3|unenv))",
     ],
+    testPathIgnorePatterns: [
+        "<rootDir>/cypress"
+    ],
     setupFiles: [
         "./test/utils/global-test-utils-config.ts"
     ]

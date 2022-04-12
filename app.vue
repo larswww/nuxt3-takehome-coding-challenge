@@ -1,17 +1,14 @@
 <script setup lang="ts">
 import NavBar from '@/components/NavBar'
 
-/**
- * // https://github.com/nuxt/nuxt.js/issues/8122
- * // https://v3.nuxtjs.org/guide/features/state-management
- * // https://v3.nuxtjs.org/api/composables/use-state
- * - use global event bus
- * - but
- * State:
- * - dateArray
- * - searchQuery
- * - currentCountry
- */
+useHead({
+  titleTemplate: 'Lars National TV shows inc', // or, title => `My App - ${title}`
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+  charset: 'utf-8',
+  meta: [
+    { name: 'description', content: 'SSR HTML & JS!.' }
+  ],
+})
 
 </script>
 <template>

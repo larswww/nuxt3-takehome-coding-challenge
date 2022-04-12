@@ -10,7 +10,7 @@ const getPrettyDate = (date: string):string => format(new Date(date), "EEEE do '
 
 const today = getYyyyMmDdDate(new Date())
 let currentDay = today //'2022-04-11' required by API
-const selectedCountry = ref('')
+const selectedCountry = ref('NL')
 const schedules = ref([])
 const countryOptions = ref([
   {name: 'Worldwide', code: '', flagEmoji: '🌎'},
@@ -21,7 +21,7 @@ const countryOptions = ref([
 initialize()
 watch(selectedCountry, initialize)
 
-const loadOneDaysTvScheduleFor = (date, country) => {
+function loadOneDaysTvScheduleFor (date, country) {
   const countryQuery = country ? `&country=${country}` : ''
   const url = `https://api.tvmaze.com/schedule?date=${date}${countryQuery}`
   const {data: episodes, pending, error} = useFetch<Episode[]>(url)
