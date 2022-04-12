@@ -33,11 +33,9 @@ describe('All tests for App', () => {
         cy.get(searchResult).should('not.exist')
     })
 
-    it.only('Search input works with keyboard support', () => {
+    it('Search input works with keyboard support', () => {
         cy.visit('/')
         cy.get(searchInput).type('game').type('{downArrow}').type('{downArrow}').type('{enter}')
-
-
     })
 
 })

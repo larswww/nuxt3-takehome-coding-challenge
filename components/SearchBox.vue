@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import {ref, computed} from '#imports'
 import {SearchIcon, CheckIcon} from "@heroicons/vue/outline";
 import {
   Combobox,
@@ -26,6 +25,7 @@ watch(selectedShow, (selected) => {
 
 </script>
 <template>
+<!--  https://headlessui.dev/vue/combobox -->
   <Combobox as="div" class="w-full sm:max-w-xs" v-model="selectedShow">
     <label for="search" class="sr-only">Search</label>
     <div class="relative">
