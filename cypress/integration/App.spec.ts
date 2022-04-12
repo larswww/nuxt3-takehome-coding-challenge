@@ -1,6 +1,3 @@
-import {first} from "rxjs";
-
-
 const episodeItem = '[data-test="episode-card"]'
 const searchInput = '[data-test="search-box"]'
 const searchResult = '[data-test="search-result"]'
@@ -32,11 +29,15 @@ describe('All tests for App', () => {
 
     it('Typing in search generates auto-complete-results and navigates to show page closing results', () => {
         cy.get(searchInput).type('game')
-        cy.get(searchResult).click()
+        cy.get(searchResult).eq(3).click()
         cy.get(searchResult).should('not.exist')
-
     })
 
+    it.only('Search input works with keyboard support', () => {
+        cy.visit('/')
+        cy.get(searchInput).type('game').type('{downArrow}').type('{downArrow}').type('{enter}')
 
+
+    })
 
 })
