@@ -1,6 +1,11 @@
 const episodeItem = '[data-test="episode-card"]'
 const searchInput = '[data-test="search-box"]'
 const searchResult = '[data-test="search-result"]'
+const countrySelect = '[data-test="country-select"]'
+const firstEpisodeHeading = `${episodeItem} h2:first`
+const logo = '[data-test="logo"]'
+const showPage ='[data-test="show-page"]'
+
 
 describe('All tests for App', () => {
 
@@ -13,9 +18,10 @@ describe('All tests for App', () => {
          * I had issues with asyncData not re-rendering on route param changes, hence this test.
          */
         cy.visit('/')
-        const firstEpisodeHeading = `${episodeItem} h2:first`
         cy.get(firstEpisodeHeading).invoke('text').then(firstShowName  => {
             cy.get(firstEpisodeHeading).click()
+            cy.get(showPage)
+            cy.url().should('include', 'show')
             cy.contains(firstShowName)
             cy.go('back')
             const lastEpisodeHeading = `${episodeItem} h2:last`
@@ -25,6 +31,16 @@ describe('All tests for App', () => {
                 cy.contains(showName)
             })
         })
+    })
+
+    it('retains state between page changes', () => {
+        cy.visit('/')
+        cy.get(countrySelect).select('SE')
+        cy.get(firstEpisodeHeading).click()
+        cy.get(showPage)
+        cy.url().should('include', 'show')
+        cy.get(logo).click()
+        cy.get(countrySelect).should('have.value', 'SE')
     })
 
     it('Typing in search generates auto-complete-results and navigates to show page closing results', () => {

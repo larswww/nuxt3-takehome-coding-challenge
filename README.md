@@ -50,6 +50,7 @@ I think I would prefer Lambda@edge since it connects with the rest of aws, but o
 Nuxt/Tailwind could easily support some great features for this type of app and UX;
 - [ ] Fix the design and refactor into smaller presentational components
 - [ ] Escape the html returned from the api without regex
+- [ ] There's a global error handler 
 - [ ] Add prettier and the plugin for sorting tailwind classes
 - [ ] Add all the same content for show pages as tvmaze.com for a real better comparison (I still win 😁)
 - [ ] Add meta/OpenGraph to all pages for SEO/share

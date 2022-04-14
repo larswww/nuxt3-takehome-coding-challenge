@@ -13,7 +13,7 @@ refresh()
 
 </script>
 <template>
-  <div>
+  <div data-test="show-page">
     <div class="sm:flex" v-if="!pending">
       <div class="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4" :key="show.name">
         <img v-if="show.image" :src="show.image.original" alt=""

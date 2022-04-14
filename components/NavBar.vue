@@ -7,7 +7,7 @@ import SearchController from '@/components/SeearchController.vue'
       <div class="relative h-16 flex justify-between">
         <div class="relative z-10 px-2 flex lg:px-0">
           <div class="flex-shrink-0 flex items-center">
-            <NuxtLink to="/" class="bg-white rounded-md text-2xl px-2 py-1 bg-gradient-to-t from-white to-yellow-200 hover:from-pink-500 hover:to-yellow-500">
+            <NuxtLink data-test="logo" to="/" class="bg-white rounded-md text-2xl px-2 py-1 bg-gradient-to-t from-white to-yellow-200 hover:from-pink-500 hover:to-yellow-500">
             📺
             </NuxtLink>
           </div>

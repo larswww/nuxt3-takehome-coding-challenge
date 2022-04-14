@@ -10,7 +10,7 @@ const getPrettyDate = (date: string):string => format(new Date(date), "EEEE do '
 
 const today = getYyyyMmDdDate(new Date())
 let currentDay = today //'2022-04-11' required by API
-const selectedCountry = ref('NL')
+const selectedCountry = useSelectedCountry()
 const schedules = ref([])
 const countryOptions = ref([
   {name: 'Worldwide', code: '', flagEmoji: '🌎'},
@@ -47,10 +47,9 @@ function initialize () {
 
 </script>
 <template>
-
   <div>
     <PageHeading heading="Upcoming TV Shows in">
-      <select v-model="selectedCountry">
+      <select data-test="country-select" v-model="selectedCountry">
         <option v-for="option in countryOptions" :value="option.code"> {{option.flagEmoji}} {{option.name}}</option>
       </select>
     </PageHeading>
