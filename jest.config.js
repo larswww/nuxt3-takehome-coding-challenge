@@ -5,6 +5,7 @@ module.exports = {
     moduleFileExtensions: ["js", "jsx", "mjs", "ts", "vue"],
     moduleNameMapper: {
         "^@/(.*)": "<rootDir>/$1",
+        "^~/(.*)": "<rootDir>/$1",
         "#app": "<rootDir>/node_modules/nuxt3/dist/app/index.mjs",
         "#imports": "<rootDir>/.nuxt/imports.d.ts",
     },

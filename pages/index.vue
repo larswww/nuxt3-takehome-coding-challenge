@@ -7,8 +7,8 @@ import {Episode} from "~/types";
 
 const getYyyyMmDdDate = (date: Date):string => format(date, 'yyyy-MM-dd')
 const getPrettyDate = (date: string):string => format(new Date(date), "EEEE do 'of' LLLL")
-
 const today = getYyyyMmDdDate(new Date())
+
 let currentDay = today //'2022-04-11' required by API
 const selectedCountry = useSelectedCountry()
 const schedules = ref([])
@@ -73,7 +73,7 @@ function initialize () {
                   :episodes="apiCall.episodes"/>
       </template>
     </div>
-    <!--    The api will return 429 too many requests if the scroll is too aggressive
+    <!--    The api will 429 too many requests if the scroll is too aggressive
       - if user scrolls past button, it won't load more, until its scrolled over again.
      -->
     <button

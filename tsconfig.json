@@ -1,6 +1,7 @@
 {
   // https://v3.nuxtjs.org/concepts/typescript
   "extends": "./.nuxt/tsconfig.json",
+  "target": "es2022",
   "compilerOptions": {
     "types": ["jest"],
     "resolveJsonModule": true
