@@ -10,8 +10,8 @@ describe('App', () => {
     test('ShowGrid renders ShowCards with content from each show',  () => {
         const [firstItem, secondItem] = scheduleResponse
         const { getByText } = render(ShowGrid,{ props: {episodes: scheduleResponse }})
-        getByText(firstItem.show.name)
-        getByText(secondItem.show.name)
+        getByText(firstItem.show.schedule.time)
+        getByText(secondItem.show.schedule.time)
     })
 
     test('ShowDetailsList renders formatted days info', () => {

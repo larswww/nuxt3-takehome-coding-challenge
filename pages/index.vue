@@ -2,6 +2,7 @@
 import {format, add} from 'date-fns'
 import ShowGrid from '@/components/ShowGrid.vue'
 import PageHeading from '@/components/PageHeading.vue'
+import TopContainer from '@/components/TopContainer.vue'
 import {vIntersectionObserver} from '@vueuse/components'
 import {Episode} from "~/types";
 
@@ -44,17 +45,19 @@ function initialize () {
   for (let i = 1; i <= daysToLoadBeforeScroll; i++) addAnotherDay()
 }
 
-
 </script>
 <template>
   <div>
-    <PageHeading heading="Upcoming TV Shows in">
-      <select data-test="country-select" v-model="selectedCountry">
-        <option v-for="option in countryOptions" :value="option.code"> {{option.flagEmoji}} {{option.name}}</option>
-      </select>
-    </PageHeading>
+    <TopContainer>
+      <PageHeading heading="Upcoming TV Shows">
+        <select data-test="country-select" v-model="selectedCountry">
+          <option v-for="option in countryOptions" :value="option.code"> {{option.flagEmoji}} {{option.name}}</option>
+        </select>
+      </PageHeading>
+    </TopContainer>
 
-    <div v-for="apiCall in schedules" :key="`schedule-for-${apiCall.date}`">
+
+    <div class="w-full" v-for="apiCall in schedules" :key="`schedule-for-${apiCall.date}`">
 
       <div class="-ml-2 mt-6 mb-1 flex flex-wrap items-baseline">
         <h3 class="ml-2 mt-2 text-lg leading-6 font-medium text-gray-900">

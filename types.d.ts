@@ -5,8 +5,12 @@ export type Show = {
     genres: string[]
     network: Network
     schedule: {
-    time: string
-    days: string[] | undefined[]
+        time: string
+        days: string[] | undefined[]
+    },
+    image?: {
+        original: string,
+        medium: string
     }
 }
 

@@ -2,7 +2,7 @@ const episodeItem = '[data-test="episode-card"]'
 const searchInput = '[data-test="search-box"]'
 const searchResult = '[data-test="search-result"]'
 const countrySelect = '[data-test="country-select"]'
-const firstEpisodeHeading = `${episodeItem} h2:first`
+const firstEpisodeHeading = `${episodeItem} span:first`
 const logo = '[data-test="logo"]'
 const showPage ='[data-test="show-page"]'
 
@@ -19,15 +19,15 @@ describe('All tests for App', () => {
          */
         cy.visit('/')
         cy.get(firstEpisodeHeading).invoke('text').then(firstShowName  => {
-            cy.get(firstEpisodeHeading).click()
+            cy.get(firstEpisodeHeading).click({ force: true })
             cy.get(showPage)
             cy.url().should('include', 'show')
             cy.contains(firstShowName)
             cy.go('back')
-            const lastEpisodeHeading = `${episodeItem} h2:last`
+            const lastEpisodeHeading = `${episodeItem} span:last`
             cy.get(lastEpisodeHeading).invoke('text').then(showName => {
                 cy.contains(firstShowName)
-                cy.get(lastEpisodeHeading).click()
+                cy.get(lastEpisodeHeading).click({ force: true })
                 cy.contains(showName)
             })
         })
@@ -36,7 +36,7 @@ describe('All tests for App', () => {
     it('retains state between page changes', () => {
         cy.visit('/')
         cy.get(countrySelect).select('SE')
-        cy.get(firstEpisodeHeading).click()
+        cy.get(firstEpisodeHeading).click({ force: true })
         cy.get(showPage)
         cy.url().should('include', 'show')
         cy.get(logo).click()
