@@ -19,8 +19,8 @@ const summary = stripHtmlTags(show.summary)
 </script>
 <template>
   <div data-test="show-page">
-    <TopContainer>
-      <div class="sm:flex" v-if="!pending">
+    <TopContainer  v-if="!pending">
+      <div class="sm:flex">
         <div class="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
           <img v-if="show.image" :src="show.image.original" :alt="`${show.name} poster`"
                class="h-48 w-full object-cover sm:w-32 border border-gray-300 bg-white text-gray-300"/>
